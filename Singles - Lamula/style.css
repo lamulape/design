@@ -1,0 +1,737 @@
+/*------------------------------------*\
+  HTML MEYER'S RESET
+  http://goo.gl/uOX9r
+\*------------------------------------*/
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section
+    {
+      display: block;
+    }
+    body              { line-height: 1; }
+    ol, ul            { list-style: none; }
+    blockquote, q     { quotes: none; }
+    blockquote:before,
+    blockquote:after,
+    q:before, q:after { content: ''; content: none; }
+    table             { border-collapse: collapse; border-spacing: 0; }
+    body * {
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: content-box;
+    -moz-box-sizing: padding-box;
+    box-sizing: border-box
+    box-sizing: content-box      
+    -webkit-box-sizing:border-box; /* Safari */
+    -webkit-font-smoothing: antialiased !important;
+    }    
+
+/*------------------------------------*\
+  ESTRUCTURA
+\*------------------------------------*/
+
+body {
+	background: #fff;
+}
+
+.container {
+	width: 760px;
+	font: normal 18px/28px 'Merriweather Sans', sans-serif;
+	color: #353535;
+	float: left;
+	margin-top: 40px;
+}
+
+article {
+	margin: 0 auto;
+	width: 980px;
+}
+
+.post-image img, .container .post-article img {
+	min-width: 760px;
+	max-width: 760px;
+	padding-bottom: 18px;
+	position: relative;
+}
+
+.post-big-image {
+	position: relative;
+	background: url("img/kindlefire.png");
+	background-size: cover;
+	width: 100%;
+	padding-bottom: 18px;
+	position: relative;
+	height: 600px;
+}
+
+.post-big-header {
+	position: absolute;
+	width: 60%;
+	background: rgba(0,0,0,0.5);
+	color: #f7f7f7;
+	padding: 10px 15px;
+	margin: 0 auto;
+	border-radius: 8px;
+	top: 20%;
+	left: 20%;
+	text-align: center;
+}
+
+
+.caption {
+	position: relative;
+	bottom: 80px;
+	padding: 0 15px;
+	color: #f7f7f7;
+	background: rgba(0,0,0,0.5);
+	white-space: normal;
+	text-align: center;
+	font-size: 90%;
+	line-height: 1.5;
+	margin-bottom: -65px;
+}
+
+.container .epigraph {
+	width: 500px;
+	background: #f2f2f2;
+	color: #444;
+	padding: 20px;
+	margin: -18px 120px 40px 120px;
+	text-align: center;
+	font-size: 80%;
+	line-height: 1.5;
+	opacity: 0.8;
+	border-radius: 0 0 6px 6px;
+	border-left: 1px dashed #d9d9d9;
+	border-right: 1px dashed #d9d9d9;
+	border-bottom: 1px dashed #d9d9d9;
+}
+
+.container .epigraph p.author-epigraph {
+	font-weight: 700;
+}
+
+.container .post-header h1 + h2 {
+	line-height: 1.3;
+	color: #353535;
+	text-align: center;
+}
+
+.container  .post-header h1 {
+	font: bold 48px/52px 'Cantora One', sans-serif;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.container .post-header h2 {
+	font: normal 24px/48px 'Cantora One', sans-serif;
+	margin-bottom: 18px;
+	border-bottom: 1px dashed #d9d9d9;
+	padding-bottom: 20px;
+}
+
+.post-big-header h1 {
+	font: bold 100px/100px 'Cantora One', sans-serif;
+	text-align: center;
+	
+}
+
+.post-big-header h2 {
+	font: normal 24px/48px 'Cantora One', sans-serif;
+	margin-bottom: 18px;
+	border-bottom: 1px dashed #d9d9d9;
+	padding-bottom: 20px;
+	line-height: 1.5;
+	margin-top: 10px;
+}
+
+.container .post-article {
+	margin-top: 30px;
+}
+
+.intro {
+	margin-bottom: 60px;
+}
+
+.container .post-article img {
+	min-width: 760px;
+	max-width: 760px;
+}
+
+.container .post-article p {
+	margin-bottom: 20px;
+}
+
+.questions {
+	font-weight: 600;
+}
+
+.answers {
+	margin-top: -20px; 
+}
+
+.container .post-article p a {
+	color: #b20050;
+	text-decoration: none;
+}
+
+.container .post-article p a:hover {
+	color: #b20050;
+	border-bottom: 3px double #b20050;
+} 
+
+.social-buttons {
+	margin-bottom: 20px;
+}
+
+.aside {
+	width: 200px;
+	float: right;
+	margin-top: 40px;
+	position: fixed;
+	margin-left: 780px;
+	opacity: 0.6;	
+}
+
+.aside:hover {
+	opacity:1;
+}
+
+.aside .image-author-card img {
+	max-width: 120px;
+	max-height: 120px;
+	border-radius: 120px;
+	background-position: center;
+	margin: 0 auto 8px;
+	margin-left: 40px;
+}
+
+.aside .info-author-card {
+	text-align: center;
+	font: normal 12px/12px 'Cantora One', sans-serif;
+	color: #555;
+}
+
+.aside .info-author-card a {
+	color: #b20050;
+	text-decoration:none;	
+} 
+
+.aside .info-author-card p {
+	margin-bottom: 15px;
+}
+
+.aside a.follow {
+	background: #d9d9d9;
+	margin-top: 15px;
+	padding: 5px 10px;
+	color: white;
+	border-radius: 6px;
+	-webkit-transition: all 0.3s ease; 
+	-moz-transition: all 0.3s ease; 
+	transition: all 0.3s ease;
+}
+
+.aside a.follow:hover {
+	background: #9c3;	
+}
+
+::selection {
+	background: #b20050;
+	color: #f7f7f7;
+}
+
+iframe {
+	margin: 0 0 20px 0;
+}
+
+a.upload-img {
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 20%;
+	bottom: 75.5%;
+	padding: 12px;
+ 	text-decoration: none;
+ 	color: #f7f7f7;
+}
+
+a.upload-img:hover {
+	background: rgba(0,0,0,0.7)
+}
+
+
+/*SOCIAL FRIENDS*/
+
+
+.social-friends {
+	width: 100%;
+	background: #f7f7f7;
+	position: relative;
+	clear: both;
+	border-top: 1px dashed #e9e9e9;
+}
+
+.listing-friends {
+	width: 980px;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+.tags {
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.tags a {
+	background: #d9d9d9;
+	color: white;
+	margin: 0 5px 12px 0;
+	padding: 4px 12px;
+	text-decoration: none;
+	border-radius: 8px;
+	font-size: 80%;
+	text-transform: uppercase;
+	font-family: 'Cantora One', sans-serif;
+	border-radius: 6px;
+	margin-bottom: 40px;
+	position: relative;
+}
+
+.tags a:hover {
+	background: #555;
+	color: white;
+}
+
+
+.tags .button-facebook {
+	background: rgb(60,90,152);
+}
+
+.tags .button-facebook li {
+	margin-left: 20px;
+}
+
+.tags .button-facebook:hover {
+	background: rgb(60,90,152);
+	color: white;
+}
+
+.tags .button-facebook:hover:after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 20px;
+	border-top: 7px solid rgb(60,90,152);5;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+}
+
+.tags .button-facebook:before {
+	content: url(img/f_logo.png);
+	position: absolute;
+}
+
+.tags ul {
+	position: relative;
+}
+
+.tags ul a:hover:after, .tags a.active:after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 20px;
+	border-top: 7px solid #555;
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;	
+}
+
+.tags a.active {
+	background: #555;
+}
+
+.listing-friends h1 {
+	font: normal 24px/24px 'Cantora One', sans-serif;
+	margin-bottom: 20px;
+	color: #555;
+}
+
+.listing-friends li a img {
+	width: 24px;
+	height: 24px;
+	border-radius: 6px;
+	opacity: 0.5;
+}
+
+.listing-friends li a img:hover {
+	opacity: 1;
+}
+
+.listing-friends li {
+	display: inline-block;
+	padding-right: 5px;
+}
+
+.readlist_header {
+	color: #555;
+}
+
+.news-social {
+	width: 170px;
+	display: inline-table;
+	margin: 10px 10px 0 0;
+	border-radius: 0 0 8px 8px;
+	box-shadow: 0 1px 1px rgba(0,0,0,.2);
+}
+
+.news-social:last-child {
+	border-right: none;
+}
+
+.news-social .post-social {
+	width: 170px;
+	background: #fff;
+	font: normal 14px/14px 'Merriweather Sans', sans-serif;
+}
+
+.post-social p {
+	padding: 10px;
+	height: 60px;
+	line-height: 1.5;
+}
+
+.post-social img {
+	min-width: 170px;
+	max-width: 170px;
+	height: 100px;
+}
+
+.post-social a {
+	text-decoration: none;
+	color: #555;
+}
+
+.post-social a:hover {
+	text-decoration: underline;
+}
+
+.user {
+	background: #fff;
+	border-top: 1px dotted #f1f1f1;
+	padding: 10px;
+	border-radius: 0 0 8px 8px;
+}
+
+.arrows {
+	display: inline-block;
+	margin-left: 25px;
+}
+
+.arrow-left {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid #d9d9d9;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.arrow-right {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 10px solid #d9d9d9;
+	display: inline-block;
+	cursor: pointer;
+}
+
+/*COMENTARIOS*/
+
+
+.comments {
+	width: 100%;
+	border-top: 1px dashed #ccc;
+	background: #e9e9e9;
+	clear: both;
+	position: relative;
+}
+
+
+.reactions {
+	width: 980px;
+	margin: 0 auto;
+}
+
+.reactions h1 {
+	font: normal 48px/64px 'Cantora One', sans-serif;
+	margin: 40px 0;
+	color: #555;
+}
+
+.block-comments {
+	width: 760px;
+}
+
+.social-comments {
+	clear: both;
+	padding: 20px;
+	text-align: center;
+	line-height: 2.5;
+	border-radius: 8px;
+	margin: 25px 0 40px 20%;
+	border: 1px solid #ddd;
+	display: inline-block;	
+}
+
+.social-comments h3 {
+	font:  normal 24px/24px 'Cantora One', sans-serif;
+	color: #555;
+}
+
+.social-comments p {
+	font-family: 'Merriweather Sans', sans-serif;
+	color: #444;
+}
+
+ul.login-buttons li {
+	display: inline-block;
+	margin-right: 10px;
+	letter-spacing: 0.2em;
+	font: normal 12px/28px 'Merriweather Sans', sans-serif;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
+ul.login-buttons li a {
+	display: block;
+	padding: 0 15px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	text-decoration: none;
+}
+
+ul.login-buttons li.twitter a {
+	background: rgb(44,170,225);
+	color: white;
+}
+
+ul.login-buttons li.facebook a {
+	background: rgb(60,90,152);
+	color: white;
+}
+
+ul.login-buttons li.lamula a {
+	background: #1a1a1a;
+	color: white;
+}
+
+.single-comment {
+	width: 760px;
+	clear: both;
+}
+
+.image-author-comment {
+	width: 100px;
+	float: left;
+	margin-top: 20px;
+}
+
+.image-author-comment img {
+	width: 80px;
+	height: 80px;
+	border-radius: 12px;
+	float: left;
+}
+
+.author-comment {
+	float: right;
+	width: 620px;
+	background: rgba(255,255,255,0.6);
+	border-radius: 12px;
+	padding: 20px;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.author-comment:hover {
+	background: #fff;
+}
+
+.author-comment a {
+	padding: 20px;
+	font: normal 18px/18px 'Cantora One', sans-serif;
+	text-decoration: none;
+	color: #444;
+	line-height: 1.3;
+}
+
+.author-comment p {
+	padding-left: 20px;
+	font: normal 14px/1.5em 'Merriweather Sans', sans-serif;
+	color: #666;
+}
+
+.text-area {
+	clear: both;
+	display: none;
+}
+
+.text-area .button {
+	margin-bottom: 40px;
+	font: normal 28px/1.5em 'Merriweather Sans', sans-serif;
+	margin-left: 87%;
+	cursor: pointer;
+}
+
+textarea {
+	width: 83%;
+	border: 1px solid #d9d9d9;
+	box-shadow: inset 1px 2px 3px rgba(0,0,0,0.1);
+	resize: vertical;
+	height: 300px;
+	border-radius: 8px;
+	font-size: 30px;
+	margin: 10px 0 10px 0;
+	padding: 20px 0 0 20px;
+	float: right;
+}
+
+/*FOOTER*/
+
+.footer {
+	width: 100%;
+	background: #d9d9d9;
+}
+
+.navbar {
+	width: 980px;
+	margin: 0 auto;
+}
+
+.navbar ul li {
+	display: inline-block;
+	padding: 10px 15px;		
+}
+
+.navbar ul li a {
+	color: #444;
+	text-decoration: none;
+	font: normal 14px/24px 'Cantora One', sans-serif;	
+}
+
+.navbar ul li a:hover {
+	text-decoration: underline;
+}
+
+
+/*Editor*/
+
+.publisher {
+	margin: 40px 0;
+	float: right;
+}
+
+/*Buttons*/
+
+.button-publisher, .button-save, .button-delete {
+	padding: 10px;
+	border-radius: 4px;
+	text-decoration: none;
+}
+
+.button-publisher {
+	background: #9BC025;
+	color: white;
+}
+
+.button-publisher:hover {
+	background: #84a420;
+}
+
+.button-save {
+	background: #d0cbbf;
+	color: white;
+}
+
+.button-save:hover {
+	background: #c2bbab;
+}
+
+.button-delete {
+	background: #f5877b;
+	color: white;
+}
+
+.button-delete:hover {
+	background: #f36a5c;
+}
+
+
+/*RESPONSIVE WEB*/
+
+/*for 1570px or less*/
+@media screen and (max-width: 1570px) {
+
+.post-big-header h1 {
+	font: bold 80px/80px 'Cantora One', sans-serif;
+	text-align: center;	
+}
+
+}
+
+
+/*for 1280px or less*/
+@media screen and (max-width: 1280px) {
+
+.post-big-header h1 {
+	font: bold 65px/65px 'Cantora One', sans-serif;
+	text-align: center;	
+}
+
+}
+
+
+/*for 1024px or less*/
+@media screen and (max-width: 1024px) {
+
+.post-big-header h1 {
+	font: bold 55px/55px 'Cantora One', sans-serif;
+	text-align: center;	
+}
+
+}
+
+/*for 768px or less*/
+@media screen and (max-width: 768px) {
+
+.post-big-header h1 {
+	font: bold 50px/50px 'Cantora One', sans-serif;
+
+}
+
+.post-big-header h2 {
+	font: normal 20px/40px 'Cantora One', sans-serif;
+	line-height: 1.2
+}
+
+}
